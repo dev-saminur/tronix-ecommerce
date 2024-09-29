@@ -6,7 +6,7 @@ import { RiSearchLine } from "react-icons/ri";
 const SearchBox = () => {
   return (
     <>
-      <Form className="search-box">
+      <Form className="search-box ">
         <Form.Control type="search" placeholder="Search" />
         <Button className="search-icon">
           <RiSearchLine />

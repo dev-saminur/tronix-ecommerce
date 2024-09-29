@@ -1,6 +1,8 @@
 .menu{
  
-    
+    @include media-breakpoint-down(md) {
+        padding: 8px;
+        }
     .menu-top{
         padding: 18px 0;
         border-bottom: 1px solid $--border-color;
@@ -44,9 +46,7 @@
     }
     .main-menu{
         padding: 46px 0;
-        @include media-breakpoint-down(md) {
-            padding: 5px 0;
-            }
+       
         .logo{
             margin-right: 160px ;
         }
@@ -68,6 +68,9 @@
         .search-box{
             width: 544px;
             position: relative;
+            @include media-breakpoint-down(md) {
+                max-width: 280px;
+                }
            
 input{
     padding: 10px 32px;

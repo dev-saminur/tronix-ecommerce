@@ -20,9 +20,13 @@ const MainMenu = () => {
       <div className="main-menu">
         <Navbar expand="lg">
           <Navbar.Toggle aria-controls="navbarScroll " />
+
           <Navbar.Brand href="/" className="logo d-none d-md-block">
             <Image width={112} src={LogoImg} alt="logo" />
           </Navbar.Brand>
+          <div className="d-block d-md-none">
+            <SearchBox />
+          </div>
           {/* <Navbar.Toggle aria-controls="navbarScroll d-none" /> */}
           <Navbar.Collapse id="navbarScroll">
             <Nav className="me-auto navbar my-lg-0" navbarScroll>
@@ -36,8 +40,12 @@ const MainMenu = () => {
                 </Nav.Link>
               ))}
             </Nav>
-            <SearchBox />
-            <ShopingCard />
+            <div className="d-none d-md-block">
+              <SearchBox />
+            </div>
+            <div className="d-none d-md-block">
+              <ShopingCard />
+            </div>
           </Navbar.Collapse>
         </Navbar>
       </div>
