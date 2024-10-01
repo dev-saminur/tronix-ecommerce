@@ -1,3 +1,59 @@
 .banner-section{
-    
+    .bannaer-slider{
+        a{
+            img{
+                border-radius: 32px;
+                -webkit-border-radius: 32px;
+                -moz-border-radius: 32px;
+                -ms-border-radius: 32px;
+                -o-border-radius: 32px;
 }
+        }
+    }
+    .banner-collection{
+        a{
+            img{
+                border-radius: 32px;
+                -webkit-border-radius: 32px;
+                -moz-border-radius: 32px;
+                -ms-border-radius: 32px;
+                -o-border-radius: 32px;
+}
+        }
+    }
+}
+
+
+/* Customizing the slider dots */
+.slick-dots {
+    bottom: 20px; /* Position from bottom */
+  }
+  
+  .slick-dots li {
+    margin: 0 5px; /* Space between the dots */
+  }
+  
+  .slick-dots li button:before {
+    content: '';
+    width: 12px; /* Size of inactive dot */
+    height: 12px;
+    background-color: #fff; /* White inactive dot */
+    border-radius: 50%;
+    display: block;
+    opacity: 1;
+    transition: all 0.3s ease; /* Smooth transition for dot size/color/shape */
+  }
+  
+  /* Active dot - rectangle */
+  .slick-dots li.slick-active button:before {
+    background-color: #ff6347; /* Active dot color (orange) */
+    width: 24px; /* Larger width for rectangle shape */
+    height: 12px; /* Maintain height for rectangle */
+    border-radius: 20px; /* Rounded rectangle */
+  }
+  
+  /* Align dots to the center */
+  .slick-dots {
+    text-align: center;
+  }
+  

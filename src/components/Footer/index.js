@@ -22,21 +22,21 @@ const Footer = () => {
       <div className="footer-section">
         <Container>
           <Row>
-            <Col xs={3} className="me-auto">
+            <Col xs={12} md={3} className="me-auto">
               <FooterRight />
             </Col>
-            <Col xs={2}>
+            <Col xs={12} md={2}>
               <FooterMenu />
             </Col>
-            <Col xs={2}>
+            <Col xs={12} md={2}>
               <Information />
             </Col>
-            <Col xs={2}>
+            <Col xs={12} md={2}>
               <Follow />
             </Col>
           </Row>
-         
-            <CopyRight />
+
+          <CopyRight />
         </Container>
       </div>
     </>
