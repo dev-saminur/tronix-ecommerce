@@ -7,10 +7,10 @@ const poppins = Poppins({
   subsets: ["latin"],
 });
 
-const Badge = ({badge, title, discount }) => {
+const Badge = ({ badge, title, discount, alone = false }) => {
   const getBadgeClass = () => {
     if (title?.toLowerCase() === "new") {
-      return "badge-new"; // Red background for "New" with fixed size
+      return alone ? "badge-new" : "badge-shared"; // Red background for "New" with fixed size
     } else if (title?.toLowerCase() === "stock out") {
       return "badge-stock-out"; // Black background for "Stock Out" with padding
     } else if (discount) {
