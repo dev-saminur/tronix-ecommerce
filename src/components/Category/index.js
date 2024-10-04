@@ -37,10 +37,6 @@ const Category = () => {
               ))}
             </div>
           </div>
-          <Badge title="New" alone={true} />
-          <Badge title="New" alone={false} />
-          <Badge title="Sold Out" />
-          <Badge discount="10" />
         </Container>
       </div>
     </>
