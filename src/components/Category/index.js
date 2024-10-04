@@ -4,7 +4,6 @@ import Header from "../helper/Header/Header";
 import Image from "next/image";
 import { Poppins } from "next/font/google";
 import { CategoryData } from "../data/CategoryData";
-import NewBadge from "../helper/Badge/Badge";
 import Badge from "../helper/Badge/Badge";
 
 const poppins = Poppins({
@@ -38,6 +37,10 @@ const Category = () => {
               ))}
             </div>
           </div>
+          <Badge title="New" alone={true} />
+          <Badge title="New" alone={false} />
+          <Badge title="Sold Out" />
+          <Badge discount="10" />
         </Container>
       </div>
     </>
