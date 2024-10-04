@@ -16,18 +16,31 @@
   height: 64px;
   border-radius: 50%;
 }
-
+.badge-shared {
+  background-color:   $--blue-color;
+  padding: 8px 10px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
 /* Styles for discount badges like "25% Off" */
 .badge-discount {
   background-color:    $--tag-color;
   padding: 10px 23px;
   border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
 /* Styles for "Stock Out" badge */
 .badge-stock-out {
   background-color: $--black-color;
-  padding: 10px 23px;
+  padding: 8px;
+  font-weight: 500;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -37,5 +50,12 @@
 
 /* Default background if no specific class is provided */
 .badge-default {
-  background-color: gray;
+  background-color: $--black-color;
+  padding: 8px;
+  font-weight: 500;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
