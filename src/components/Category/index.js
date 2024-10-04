@@ -4,6 +4,8 @@ import Header from "../helper/Header/Header";
 import Image from "next/image";
 import { Poppins } from "next/font/google";
 import { CategoryData } from "../data/CategoryData";
+import NewBadge from "../helper/Badge/Badge";
+import Badge from "../helper/Badge/Badge";
 
 const poppins = Poppins({
   weight: "400",
