@@ -6,8 +6,8 @@ import LogoImg from "../../../public/images/tronoxlogo.png";
 import ShopingCard from "./ShopingCard";
 import Image from "next/image";
 import { MenuData } from "../data/MenuData";
-import { Poppins } from "next/font/google";
 import SearchBox from "./SearchBox";
+import { Poppins } from "next/font/google";
 
 const poppins = Poppins({
   weight: "400",
