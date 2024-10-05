@@ -7,6 +7,8 @@ import Image from "next/image";
 import Badge from "../helper/Badge/Badge";
 import { Poppins } from "next/font/google";
 import { MdStarRate } from "react-icons/md";
+import { NewArrivalData } from "../data/NewArrivalData";
+import Link from "next/link";
 
 const poppins = Poppins({
   weight: "400",
@@ -17,42 +19,49 @@ const NewArrival = () => {
     <>
       <div className="arrival-section">
         <Container>
-          <Header title="new arrival" />
+          <div className="arrival-header d-flex justify-content-between align-items-center">
+            <Header title="new arrival" />
+            <Link href="/">view all</Link>
+          </div>
           <Row>
-            <Col md={4}>
-              <div className="arrival-box d-flex ">
-                <div className="image">
-                  <Image
-                    src={Smartphone}
-                    width={235}
-                    height={290}
-                    alt="smartphone"
-                  />
-                  <div className="new-badge">
-                    <Badge title="new" alone={true} />
-                  </div>
-                </div>
-                <div className="content">
-                  <h4 className={poppins.className + " " + " "}>
-                    USB Speaker Portable
-                  </h4>
-                  <h3>$299.00</h3>
-                  <div className="review d-flex align-items-center">
-                    <div className="rating d-flex align-items-center">
-                      <MdStarRate />
-                      <span className={poppins.className + " " + " "}>5.0</span>
-                    </div>
-                    <div className="sold-out">
-                      <span className={poppins.className + " " + " "}>
-                        sold out
-                      </span>
+            {NewArrivalData.map((item, i) => (
+              <Col key={i} md={4} className="g-4">
+                <div className="arrival-box d-flex ">
+                  <div className="image">
+                    <Image
+                      src={item.image}
+                      width={235}
+                      height={290}
+                      alt="smartphone"
+                    />
+                    <div className="new-badge">
+                      <Badge badge={true} title="new" alone={true} />
                     </div>
                   </div>
+                  <div className="content">
+                    <h4 className={poppins.className + " " + " "}>
+                      {item.pname}
+                    </h4>
+                    <h3>{item.pprice}</h3>
+                    <div className="review d-flex align-items-center">
+                      <div className="rating d-flex align-items-center">
+                        {item.ratingicon}
+                        <span className={poppins.className + " " + " "}>
+                          {item.review}
+                        </span>
+                      </div>
+                      <div className="sold-out">
+                        <span className={poppins.className + " " + " "}>
+                          {item.sold}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </Col>
-            <Col md={4}>Two</Col>
-            <Col md={4}>Three</Col>
+              </Col>
+            ))}
+            {/* <Col md={4}>Two</Col>
+            <Col md={4}>Three</Col> */}
           </Row>
         </Container>
       </div>
