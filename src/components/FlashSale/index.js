@@ -1,9 +1,9 @@
 import React from "react";
 import Container from "../helper/Container/Container";
-import { Col, Row } from "react-bootstrap";
 import Header from "../helper/Header/Header";
 import Link from "next/link";
 import { Poppins } from "next/font/google";
+import FlashProduct from "./FlashProduct";
 
 const poppins = Poppins({
   weight: "400",
@@ -36,11 +36,7 @@ const FlashSale = () => {
               view all
             </Link>
           </div>
-          <Row>
-            <Col md={4}>one</Col>
-            <Col md={4}>two</Col>
-            <Col md={4}>three</Col>
-          </Row>
+          <FlashProduct />
         </Container>
       </div>
     </>
