@@ -22,11 +22,15 @@ const Badge = ({ badge, title, discount, alone = false }) => {
   // Dynamic badge text: If discount is provided, show X% Off, else show title
   const badgeText = discount ? `${discount}% Off` : title;
   return (
-    <button
-      className={`${poppins.className} badge ${getBadgeClass()}`} // Apply dynamic class and font
-    >
-      {badgeText} {/* Display dynamic text */}
-    </button>
+    <>
+      {badge && (
+        <button
+          className={`${poppins.className} badge ${getBadgeClass()}`} // Apply dynamic class and font
+        >
+          {badgeText} {/* Display dynamic text */}
+        </button>
+      )}
+    </>
   );
 };
 
