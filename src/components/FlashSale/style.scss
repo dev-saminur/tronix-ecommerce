@@ -1,0 +1,40 @@
+.flash-section{
+    padding: 160px 0;
+    .flash-header{
+        margin-bottom: 60px;
+        .flash-time{
+            .header{
+                font-size: 56px;
+            }
+            .time-area{
+                margin-left: 40px;
+                .time-box{
+                    text-align: center;
+                    padding: 12px 25px;
+                    border: 1px solid $--border-color;
+                    border-radius: 16px;
+                    -webkit-border-radius: 16px;
+                    -moz-border-radius: 16px;
+                    -ms-border-radius: 16px;
+                    -o-border-radius: 16px;
+                    h4{
+                        font-size: 24px;
+                        color:$--red-color;
+                        font-weight: 700;
+                        text-transform: capitalize;
+                        margin-bottom: 0;
+                    }
+                    span{
+                        font-size: 18px;
+                        color:     $--icon-color;  
+                        text-transform: capitalize;
+                    }
+}
+            }
+        }
+        a{
+            font-size: 24px;
+            color: $--red-color;
+        }
+    }
+}
