@@ -37,4 +37,15 @@
             color: $--red-color;
         }
     }
+    .flash-box{
+
+        .image{
+            position: relative;
+            .new-badge{
+position: absolute;
+top: 32px;
+right: 32px;
+            }
+        }
+    }
 }
