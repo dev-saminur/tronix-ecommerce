@@ -21,11 +21,13 @@ const NewArrival = () => {
         <Container>
           <div className="arrival-header d-flex justify-content-between align-items-center">
             <Header title="new arrival" />
-            <Link href="/" className={poppins.className + " " + " "}>view all</Link>
+            <Link href="/" className={poppins.className + " " + " "}>
+              view all
+            </Link>
           </div>
           <Row>
             {NewArrivalData.map((item, i) => (
-              <Col key={i} md={4} className="g-4">
+              <Col key={i} md={4}>
                 <div className="arrival-box d-flex ">
                   <div className="image">
                     <Image
