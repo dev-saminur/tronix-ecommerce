@@ -1,11 +1,9 @@
 .arrival-section{
     .arrival-box{
         border: 1px solid $--border-color;
-        border-radius: 32px;
-        -webkit-border-radius: 32px;
-        -moz-border-radius: 32px;
-        -ms-border-radius: 32px;
-        -o-border-radius: 32px;
+        border-bottom-right-radius: 32px;
+        border-top-right-radius: 32px;
+       
         .image{
             position: relative;
             .new-badge{
@@ -14,5 +12,44 @@
                 left: 24px;
             }
         }
-}
+        .content{
+            padding: 65px 70px 65px 32px;
+            
+            h4 {
+                font-size: 24px;
+                color: $--black-color;
+            }
+            h3 {
+
+                font-size: 24px;
+                color: $--black-color;
+                font-weight: 700;
+            }
+            .review{
+                margin-top: 16px;
+                .rating{
+                    padding-right: 16px;
+                    svg{
+                        font-size: 24px;
+                        color: $--review-color;
+                        margin-right: 8px;
+                    }
+                    span{      
+                font-size: 18px;
+                color:  $--icon-color;
+                font-weight: 400;
+                    }
+                }.sold-out{
+                    span{      
+                        font-size: 18px;
+                        color:  $--icon-color;
+                        font-weight: 400;
+                        text-transform: capitalize;
+                        padding-left: 16px;
+                        border-left: 1px solid $--border-color;
+                            }
+                }
+            }
+            }
+        }
 }
