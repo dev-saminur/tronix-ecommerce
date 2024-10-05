@@ -1,0 +1,18 @@
+.arrival-section{
+    .arrival-box{
+        border: 1px solid $--border-color;
+        border-radius: 32px;
+        -webkit-border-radius: 32px;
+        -moz-border-radius: 32px;
+        -ms-border-radius: 32px;
+        -o-border-radius: 32px;
+        .image{
+            position: relative;
+            .new-badge{
+                position: absolute;
+                top: 24px;
+                left: 24px;
+            }
+        }
+}
+}
