@@ -44,7 +44,9 @@ const NewArrival = () => {
                     <h4 className={poppins.className + " " + " "}>
                       {item.pname}
                     </h4>
-                    <h3>{item.pprice}</h3>
+                    <h3 className={poppins.className + " " + " "}>
+                      {item.pprice}
+                    </h3>
                     <div className="review d-flex align-items-center">
                       <div className="rating d-flex align-items-center">
                         {item.ratingicon}
