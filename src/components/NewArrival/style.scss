@@ -1,5 +1,9 @@
 .arrival-section{
+    .arrival-header{
+        margin-bottom: 28px;
+    }
     .arrival-box{
+      
         border: 1px solid $--border-color;
         border-bottom-right-radius: 32px;
         border-top-right-radius: 32px;
@@ -13,7 +17,7 @@
             }
         }
         .content{
-            padding: 65px 70px 65px 32px;
+            padding: 65px 50px 65px 32px;
             
             h4 {
                 font-size: 24px;
