@@ -21,7 +21,7 @@ const NewArrival = () => {
         <Container>
           <div className="arrival-header d-flex justify-content-between align-items-center">
             <Header title="new arrival" />
-            <Link href="/">view all</Link>
+            <Link href="/" className={poppins.className + " " + " "}>view all</Link>
           </div>
           <Row>
             {NewArrivalData.map((item, i) => (
